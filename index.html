@@ -1,0 +1,54 @@
+<html>
+    <meta charset="UTF-8">
+    <h1>01-01 Práctica calcular puntos de equipo de funbol</h1> <! 01-01 Práctica calcular puntos equipo funtbol>
+    <h3>----------------------------------------------------------------</h3>
+    <br>
+    <br>
+
+    <script>
+
+        function saltarLinea() {
+            document.write("<br>");
+            document.write("<br>");         
+            }  
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        var nombreEquipo = prompt("Nombre del equipo");
+        var victorias = parseInt(prompt("Partidos ganados"));
+        var empates = parseInt(prompt("Partidos empatados"));        
+        var totalPuntos = (victorias *3)  + empates;
+
+
+        imprimir("<h3>El total de puntos acumulados del equipo -" + nombreEquipo + "- es: " + totalPuntos +"</h3");
+
+
+        if (totalPuntos > 10) {
+            imprimir("<h3>El equipo tiene más puntos que el año pasado" +"</h3");
+        }
+
+        if (totalPuntos < 10) {
+            imprimir("<h3>El equipo tiene menos puntos que el año pasado" +"</h3");
+        }
+
+        if (totalPuntos == 10) {
+            imprimir("<h3>El equipo tiene los mismos puntos que el año pasado" +"</h3");
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <h4>Práctica por Raúl Trueba Mejía - G4 2022 CDMX</h4>
+        <a href="https://www.linkedin.com/in/deepfx/"><img src="linkedin.png" alt="Contacto Raúl Trueba"></a>
+        <a><img src="one.png" alt="Contacto Raúl Trueba" width="36" height="36"></a>
+        <a><img src="logoalura.svg" alt="Contacto Raúl Trueba" width="32" height="32"></a>       
+    </div>
+</html>
